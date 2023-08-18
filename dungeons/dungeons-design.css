@@ -1,0 +1,104 @@
+@font-face { font-family: HARRYP; src: url('../fonts/HARRYP.TTF'); } 
+@font-face { font-family: WizardWorld; src: url('../fonts/WizardWorld.ttf'); }
+@font-face { font-family: "Ovation"; src: url('../fonts/Ovation.ttf');}
+
+body
+{
+	margin: 0;
+	background-color:grey;
+	overflow-x:hidden;
+	background-image: url('../images/diagmonds.png');
+	background-repeat: repeat;
+	background-size: 7vw;
+	background-attachment:fixed;
+}
+
+#centeredmenu
+{
+	width:100%;
+	font-size:30px;
+	z-index:50;
+}
+
+#centeredmenu ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	position:relative;
+	right:50%;
+	display: flex;
+	gap: 50px;
+}
+
+#centeredmenu ul li
+{
+	text-align:center;
+	float: left;
+	position:relative;
+	left:50%;
+}
+
+#centeredmenu ul li a
+{
+	text-decoration:none;
+	color:white;
+	display: inline-block;
+letter-spacing: .1em;
+text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+font-family: WizardWorld; 
+}
+
+#centeredmenu ul li a:hover
+{
+text-shadow: -4px 4px rgba(179,179,179,.4), -3px 3px rgba(153,153,153,.2), -2px 2px rgba(179,179,179,.2), -1px 1px rgba(179,179,179,.2), 0px 0px rgba(128,128,128,.5), 1px -1px rgba(77,77,77,.6), 2px -2px rgba(77,77,77,.7), 3px -3px rgba(82,82,82,.8), 4px -4px rgba(77,77,77,.9), 5px -5px rgba(77,77,77,1);
+color:white;
+cursor: url(../images/open-door.png), auto;
+}
+
+.active {
+    color:grey !important;
+ }
+
+header
+{
+	background-image: url('../images/diagmonds.png');
+	background-repeat: repeat;
+	background-size: 7vw;
+	background-attachment:fixed;
+	padding-top:25px;
+	padding-bottom:25px;
+	z-index:50;	
+}
+
+#nav-transition
+{
+	position: absolute;
+	width:100%;
+	height:1px;
+	background-color:lightgreen;
+	box-shadow: 1px 1px 20px 5px lightgreen;
+	z-index:50;
+}
+
+ main
+ {
+	z-index:-2;
+	width:100%;
+	height:1000px;
+	overflow:hidden;
+ }
+
+#hall
+{
+	user-select: none;
+	pointer-events: none;
+	position: absolute;
+ 	 width: 100%;
+	 height: 91%;
+	 object-fit: cover;
+	 overflow:hidden;
+	 box-shadow: 1px 1px 20px 5px black;
+	filter: blur(4px);
+ }

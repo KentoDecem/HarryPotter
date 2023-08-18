@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Hacky Potter - Entrance</title>
+	<meta name="description" content="Do you think that programming and sorcery has something similiar in it? We want to help u learn the real life magic that u can use as you like!">
+
+
+	<link rel="icon" href="images/hacky.ico">
+	<link rel="stylesheet" href="./style.css">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+	<header></header>
+	
+	<main>
+
+
+		<h1 class="h3ad"><span class="mist">Welcome</span> <span class="mist">in</span> <span class="fire">Hackwart</span></h1>
+
+
+		<div id="cloud">
+			<img id="old_text_bg" src="images/pergamin1.png">
+			<h1 class="h2ad">
+				<span>Here programming becomes a wizarding art.</span><span>Get ready for an extraordinary journey where algorithms dance to the rhythm of spells and codes rush through code lines on a broomstick.</span><span>Just remember, keep this hidden from those pesky Muggles.</span><span>The magic awaits, so grab your wand (keyboard) and let the coding magic unfold!</span>
+			</h1>
+
+			<div class="h1ad">
+				<b><span>Use the spell below only if you are ready to face the danger of forbidden knowledge!</span></b>
+				<div class="title">
+					<span>
+					<h1 class="tekst">
+					<a id="cur" class="glow-on-hover" href="subjects/subjects.html">Alohomora</a>
+				
+						<img class="door open" src="images/open.png">
+						<img class="door close" src="images/close.png">
+						
+					</h1>
+					
+				</span>
+				</div>
+			</div>
+
+			<h1 class="h0ad">
+				<span>Still here?<span>What are you waiting for, lets face your fears!</span></h1>
+		</div>
+
+
+
+
+		<script>
+	window.addEventListener('scroll', function() {
+        var h2ad = document.querySelector('.h2ad');
+        var h1ad = document.querySelector('.h1ad');
+        var h0ad = document.querySelector('.h0ad');
+
+
+
+	if (window.scrollY > 100 && window.scrollY <= 800)
+	{
+        h2ad.classList.add('hide');
+        h1ad.classList.add('show');
+        h1ad.classList.remove('hide');
+	h0ad.classList.add('hide');
+        }
+	else if (window.scrollY > 800)
+	{
+	h1ad.classList.add('hide');
+        h1ad.classList.remove('show');
+	h0ad.classList.add('show');
+	h0ad.classList.remove('hide');
+        h2ad.classList.add('hide');
+	}
+	else
+	{
+        h2ad.classList.add('show');
+        h2ad.classList.remove('hide');
+        h1ad.classList.add('hide');
+	h0ad.classList.add('hide');
+        }
+	});
+		</script>
+	
+	</main>
+
+	<footer>
+
+
+	</footer>
+
+</body>
+
+</html>
